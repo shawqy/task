@@ -1,0 +1,20 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+   <!--  -->
+	<title>ASU Racing Team</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    <body>
+        <form method="post" > 
+            {% csrf_token  %}
+         {{ form|crispy }}
+          <button type="submit" > Submit</button>  
+        </form>
+   
+    
+    </body>
+</html>
